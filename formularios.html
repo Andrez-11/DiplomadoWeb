@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<meta charset="utf-8">
+<html lang="es">
 <head>
 	<title></title>
 </head>
@@ -7,24 +8,47 @@
 		<form action="a_donde_quiero_enviar_los_datos.html" method="post"> 
 			
 			<label for="idnombre">Nombre:</label> 
-				<input id="idnombre" name="nombre" type="text"/>
+				<input id="idnombre" name="nombre" type="text"/><br />
 			<label for="idpass">Password:</label> 
-				<input id="idpass" name="contrasena" type="password"/>
+				<input id="idpass" name="contrasena" type="password"/><br />
 			<label for="idresp">Respuesta:</label> 
-				<input id="idresp" name="om" type="checkbox"/> 
+				<input id="idresp" name="om" type="checkbox"/> <br />
 			Sexo:
 			<label for="sexom">Masculino:</label>  
-				<input id="sexom" name="sexo" type="radio" value="M"/> 
+				<input id="sexom" name="sexo" type="radio" value="M"/> <br />
 			<label for="sexof">Femenino:</label> 
-				<input id="sexof" name="sexo" type="radio" value="F"/> 
+				<input id="sexof" name="sexo" type="radio" value="F"/> <br />
 			<label for="idcom">Comentarios:</label> 
-				<textarea id="idcom" name="comentarios"></textarea>
+				<textarea id="idcom" name="comentarios"></textarea><br />
+			<label for="idinteres">Intereses:</label> 
+				<select id="idinteres"name="intereses">
+					<option value="1">Opción 1</option>
+					<option value="2">Opción 2</option>
+					<option value="3">Opción 3</option>
+					<option value="4">Opción 4</option>
+				</select>
 
 <hr />
 		<input type="button" value="Boton que no hace absolutamente nada"/>
 		<input type="reset" value="Borra todo el formulario"/>
 		<input type="submit" value="Envia los datos"/>
+<hr />
 
+		<input type="url"  required />
+		
+		<!-- 
+		tipos de etiquetas para navegación móvil
+			name: pone con mayúscula la primer letra de cada palabra
+			email: agrega al teclado movil la tecla @ y una tecla .com
+			url: agrega al teclado una tecla .com
+
+			color: permite seleccionar visualmente un color
+			date: muestra un calendario para seleccionar una fecha
+			time: muestra automáticamente el formato para la hora
+
+			range: muestra una barra de desplazamiento para selecionar un valor numérico.
+			number: muestra un spinner numérico
+		-->
 
 		</form>
 
