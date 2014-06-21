@@ -1,3 +1,15 @@
+/*se pone al inicio*/
+@font-face {
+	font-family: 'iconitos';
+	src:url('fonts/icomoon.eot?-aiemkz');
+	src:url('fonts/icomoon.eot?#iefix-aiemkz') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-aiemkz') format('woff'),
+		url('fonts/icomoon.ttf?-aiemkz') format('truetype'),
+		url('fonts/icomoon.svg?-aiemkz#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	background: #e8e8e8;
 	color: #444;
@@ -36,6 +48,11 @@ header .avatar .flechita{
 	top: 10px;
 	width: 20px;
 }
+header .avatar .flechita:before{ /*antes del contenido se pone AFTER despues del contenido*/
+	content: "\e602";
+	font-family: "iconitos";
+
+}
 
 header .avatar .publicar{
 	background: #dd4f24;
@@ -47,7 +64,12 @@ header .avatar .publicar{
 	text-align: center;
 	text-decoration: none;
 	top: 30px;
-	width: 60px;
+	width: 80px;
+}
+header .avatar .publicar:before{
+	content: "\e600";
+	font-family: "iconitos";
+
 }
 
 header .logo{
@@ -176,6 +198,12 @@ nav .menu li a:hover{
 	text-decoration: none;
 }
 
+.posts .post .acciones .comenfavs .favoritos:before{
+	font-family: "iconitos";
+	content:"\e601";
+
+}
+
 .posts .post .acciones .votos{
 	float:left;
 	margin-left: 0.5em;
@@ -186,15 +214,23 @@ nav .menu li a:hover{
 }
 
 .posts .post .acciones .likes, .posts .post .acciones .nolikes{
+	font-family: "iconitos";
 	text-decoration: none;
 }
 
 .posts .post .acciones .likes{
 	color:green;
+	content:"\e603";
+}
+.posts .post .acciones .likes:before{
+	content:"\e603";
 }
 
 .posts .post .acciones .nolikes{
 	color:red;
+}
+.posts .post .acciones .nolikes:before{
+	content:"\e602";
 }
 
 .posts .post .detalles .autor a{
@@ -238,4 +274,33 @@ nav .menu li a:hover{
 
 .posts .post .generales .imagen img{
 	width:95px; 
+}
+
+/*para ajustar la pantalla al header*/
+@media screen and (max-width:500px){
+	body{
+	font-size: 14px;
+	}
+
+	header .titulo{
+			height: 80px;
+	}
+
+	header .titulo h1{
+			display: none;
+	}
+	.posts .post{
+		display: inline-block;
+		margin-left:3px;
+		margin-right: 3px;
+		width: 48%;
+		
+	}
+
+
+}
+
+@media screen and (max-width: 700px){
+	
+	
 }
