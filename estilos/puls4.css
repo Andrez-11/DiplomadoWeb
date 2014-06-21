@@ -1,0 +1,143 @@
+/*new*/
+body{
+	background: #e8e8e8;/*new*/
+	color: #444;/*new*/
+	font-size: 16px;/*new*/
+}
+
+header{
+	background: #444444;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2); /*el 0.2 es la transparencia de 0 a 1 */
+	color: white;
+	position: relative;/*new*/
+	z-index: 10;/*new*/
+}
+
+header .avatar{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+header .avatar img{
+	border-radius: 50%; /*borde rendondeado*/
+	width: 50px;
+	margin-right: 20px; 
+}
+
+header .avatar .flechita{
+	background: #DD4F24;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 25px;
+	position: absolute;/*la misma posicion el objeto siempre segun el contenedor*/
+	right: 0;
+	text-align: center;
+	text-decoration: none;/*quitar linea hpervinculo*/
+	text-shadow: 2px 2px 1px #000000;
+	top: 10px;
+	width: 20px;
+}
+
+header .avatar .publicar{
+	background: #DD4F24;
+	color: #FFFFFF;
+	display: inline-block;
+	height: 25px;
+	position: absolute;
+	right: 76px;
+	text-align: center;
+	text-decoration: none;/*quitar linea hipervinculo*/
+	top: 10px;
+	width: 80px;
+
+}
+
+header .logo{
+	border-right: 1px solid #22BCE0;
+	float: left;
+	margin-left: 15px; /* del borde hacia afuera*/
+	padding-right: 5px; /* del borde hacia el contenido*/
+	width: 80px;
+}
+header .logo img{
+	width: 80px;
+}
+
+header .titulo{
+	display: inline-block; /* para que no me cuente a partir del bloque*/
+	margin-left: 15px;
+
+}
+
+header .titulo h1{
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: normal;
+
+}
+
+header .titulo p{
+	color: #22BCE0;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+nav{
+	background: #22bce0;
+	border-left: 10px solid #ffffff;
+}
+
+nav .menu{
+	height: 50px;
+	line-height: 50px;
+	margin:0;
+	padding: 0;
+}
+
+nav .menu li{
+	display: inline-block;
+}
+
+nav .menu li a{
+	color: #ffffff;
+	display: block;
+	margin: 0 0.5em;
+	/* 
+		margin-top:0;
+		margin-bottom:0;
+		margin-left:0.5em;
+		margin-right:0.5em;
+	*/
+	padding:0 0.2em;
+	text-decoration: none;
+}
+
+nav .menu li a:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+.posts{
+	padding: 0.5em;
+}
+
+.posts .post{
+	background: #ffffff;
+	border-radius: 0 0 0.5em 0.5em;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	margin-bottom: 0.5em;
+}
+
+.posts .post .detalles{
+	height: 128px;
+	margin-left: 6.25em;
+}
+
+.posts .post .generales .imagen {
+	float:left;
+}
+
+.posts .post .generales .imagen img{
+	width:95px; 
+
+
